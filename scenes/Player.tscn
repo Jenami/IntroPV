@@ -1,11 +1,11 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Sprite.gd" type="Script" id=1]
-[ext_resource path="res://assets/background.png" type="Texture" id=2]
-[ext_resource path="res://assets/player.png" type="Texture" id=3]
+[ext_resource path="res://entities/Sprite.gd" type="Script" id=1]
+[ext_resource path="res://assets/player.png" type="Texture" id=2]
+[ext_resource path="res://assets/background.png" type="Texture" id=3]
 [ext_resource path="res://assets/floor.png" type="Texture" id=4]
 
-[sub_resource type="TileSet" id=2]
+[sub_resource type="TileSet" id=1]
 0/name = "floor.png 0"
 0/texture = ExtResource( 4 )
 0/tex_offset = Vector2( 0, 0 )
@@ -44,7 +44,7 @@ margin_left = 8.71765
 margin_top = 4.33929
 margin_right = 808.718
 margin_bottom = 604.339
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 expand = true
 stretch_mode = 1
 __meta__ = {
@@ -53,11 +53,11 @@ __meta__ = {
 
 [node name="Player" type="Sprite" parent="."]
 position = Vector2( 501.151, 351.989 )
-texture = ExtResource( 3 )
+texture = ExtResource( 2 )
 script = ExtResource( 1 )
 speed = 400.0
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource( 2 )
+tile_set = SubResource( 1 )
 format = 1
 tile_data = PoolIntArray( 393218, 1, 0, 393219, 1, 0, 393220, 1, 0, 393221, 1, 0, 393222, 1, 0, 393223, 1, 0, 393224, 1, 0, 393225, 1, 0, 393226, 1, 0, 393227, 1, 0, 393228, 1, 0, 393229, 1, 0 )
