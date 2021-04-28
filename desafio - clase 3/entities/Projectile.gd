@@ -10,8 +10,6 @@ func initialize(fire_direction:Vector2, initial_position:Vector2):
 	global_position = initial_position
 	direction = fire_direction
 	
-	timer.start()
-	
 func _physics_process(delta):
 	position +=  direction * speed * delta 
 

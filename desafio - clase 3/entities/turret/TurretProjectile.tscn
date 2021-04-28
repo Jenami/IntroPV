@@ -4,7 +4,10 @@
 [ext_resource path="res://assets/textures/proyectile_turret.png" type="Texture" id=2]
 
 [node name="TurretProjectile" instance=ExtResource( 1 )]
-speed = 100.0
+speed = 150.0
 
 [node name="Sprite" parent="." index="0"]
 texture = ExtResource( 2 )
+
+[node name="Timer" parent="." index="1"]
+one_shot = true
