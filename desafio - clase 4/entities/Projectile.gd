@@ -9,7 +9,10 @@ var container
 var direction:Vector2
 var is_player_projectile = false
 
-func initialize(container, spawn_position:Vector2, direction:Vector2, is_player_projectile):
+func initialize(container, 
+				spawn_position:Vector2, 
+				direction:Vector2, 
+				is_player_projectile):
 	self.container = container
 	container.add_child(self)
 	self.direction = direction
