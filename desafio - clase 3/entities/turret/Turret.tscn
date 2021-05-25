@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/textures/turret.png" type="Texture" id=1]
+[ext_resource path="res://entities/turret/Turret.gd" type="Script" id=2]
+[ext_resource path="res://entities/turret/TurretProjectile.tscn" type="PackedScene" id=3]
+
+[node name="Turret" type="Sprite"]
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+t_projectile_scene = ExtResource( 3 )
+
+[node name="TurretFirePosition" type="Position2D" parent="."]
+
+[node name="TurretTimer" type="Timer" parent="."]
+wait_time = 2.0
+[connection signal="timeout" from="TurretTimer" to="." method="_on_TurretTimer_timeout"]
